@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var convertButton : Button
     lateinit var outText : TextView
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         outText = findViewById(R.id.outText)
 
         convertButton.setOnClickListener {
+            convertButton.text = enterText.text.toString()
             outText.text = enterText.text.toString().uppercase()
         }
     }
