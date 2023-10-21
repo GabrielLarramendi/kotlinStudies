@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal|center_vertical"
+    android:id="@+id/linearLayout">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    >
+        <RadioButton
+            android:id="@+id/greenButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verde"
+            tools:layout_editor_absoluteX="137dp"
+            tools:layout_editor_absoluteY="261dp"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioButton
+            android:id="@+id/yellowButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amarelo"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="194dp"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioButton
+            android:id="@+id/blueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Azul"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="36dp"
+            android:layout_marginBottom="10dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonChangeBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mudar cor de fundo"
+        android:textSize="20sp"
+        android:backgroundTint="#E91E63"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>
